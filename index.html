@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
     <title>ReserveMe</title>
-  
-
+    <!-- Prefetch para los scripts -->
+    <link rel="prefetch" href="mapa.js">
+    <link rel="prefetch" href="functions.js">
+    <!-- Preload para los estilos -->
+    <link rel="preload" href="css/global.css" as="style">
+    <!-- Polyfill para navegadores antiguos -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-      <script type="module" src="mapa.js"></script>
+    <!-- Defer para los scripts -->
+    <script defer src="mapa.js"></script>
+    <script defer src="functions.js"></script>
  
 </head>
 <body>
